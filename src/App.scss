@@ -1,5 +1,4 @@
 $box-width: 710px;
-$box-height: 365px;
 $box-green: linear-gradient(to bottom, rgb(71, 228, 193), rgb(7, 205, 221));
 $box-red: linear-gradient(to bottom, rgba(250, 145, 97, 0.7), rgba(247, 59, 28, 0.69));
 $box-amber: linear-gradient(to bottom, rgb(228, 172, 71), rgb(221, 168, 7));
@@ -29,7 +28,6 @@ $answer-unselected-color: white;
 .background {
   display: inline-block;
   width: $box-width;
-  height: $box-height;
   border-radius: $box-border-radius;
   box-shadow: $box-shadow;
 }

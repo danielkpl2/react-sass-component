@@ -29,7 +29,6 @@ const answers = [
     "correct": "answer2",
     "selected": "answer1"
   }
-
 ]
 
 const question = "An animal cell contains:"

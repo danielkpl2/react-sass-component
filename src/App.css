@@ -9,7 +9,6 @@
 .background, .background-red, .background-green, .background-amber, .background-yellow {
   display: inline-block;
   width: 710px;
-  height: 365px;
   border-radius: 8px;
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5); }
 

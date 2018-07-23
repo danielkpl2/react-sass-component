@@ -15,12 +15,15 @@ class Quiz extends Component {
     for(var i = 0; i < numRedClasses; i++){
       this.classes.push("red");
     }
-    this.classes = this.classes.concat([ 'amber', 'yellow', 'green']);
+    if(this.props.answers.length > 1) {
+      this.classes = this.classes.concat('amber');
+    }
+    this.classes = this.classes.concat(['yellow', 'green']);
     this.handleToggle = this.handleToggle.bind(this);
     this.numCorrect = this.numCorrect.bind(this);
 
   }
-  
+
   componentDidMount(){
     this.numCorrect();
   }
