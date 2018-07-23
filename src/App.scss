@@ -1,0 +1,125 @@
+$box-width: 710px;
+$box-height: 365px;
+$box-green: linear-gradient(to bottom, rgb(71, 228, 193), rgb(7, 205, 221));
+$box-red: linear-gradient(to bottom, rgba(250, 145, 97, 0.7), rgba(247, 59, 28, 0.69));
+$box-amber: linear-gradient(to bottom, rgb(228, 172, 71), rgb(221, 168, 7));
+$box-yellow: linear-gradient(to bottom, rgb(211, 228, 71), rgb(218, 221, 7));
+$box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+$box-border-radius: 8px;
+$transition: all 300ms ease;
+$toggle-box-width: 430px;
+$toggle-box-height: 45px;
+$toggle-box-border-radius: 100px;
+$toggle-switch-width: $toggle-box-width / 2;
+$font-family: Multi;
+$font-size-small: 14px;
+$font-size-large: 17px;
+$answer-selected-color: rgb(70, 66, 66);
+$answer-unselected-color: white;
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: $font-family;
+  font-size: $font-size-small;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.background {
+  display: inline-block;
+  width: $box-width;
+  height: $box-height;
+  border-radius: $box-border-radius;
+  box-shadow: $box-shadow;
+}
+
+.background-red {
+  @extend .background;
+  background: $box-red;
+}
+
+.background-green {
+  @extend .background;
+  background: $box-green;
+}
+
+.background-amber {
+  @extend .background;
+  background: $box-amber;
+}
+
+.background-yellow {
+  @extend .background;
+  background: $box-yellow;
+}
+
+.shadow-green {
+  box-shadow: 0 0 6px 1px rgba(0, 115, 101, 0.5);
+}
+
+.shadow-red {
+  box-shadow: 0 0 6px 1px rgba(195, 51, 51, 0.5);
+}
+.shadow-yellow {
+  box-shadow: 0 0 6px 1px rgba(195, 184, 51, 0.5);
+}
+.shadow-amber {
+  box-shadow: 0 0 6px 1px rgba(195, 151, 51, 0.5);
+}
+
+.toggle-box {
+  display: inline-flex;
+  margin: 5px 0;
+  width: $toggle-box-width;
+  height: $toggle-box-height;
+  border-radius: $toggle-box-border-radius;
+  border: solid 1px rgb(251, 251, 251);
+}
+
+.toggle-switch-left {
+  position: absolute;
+  transition: $transition;
+  width: $toggle-switch-width;
+  height: $toggle-box-height;
+  border-radius: $toggle-box-border-radius;
+  background-color: rgba(249, 249, 249, 0.5);
+}
+.toggle-switch-right {
+  position: absolute;
+  margin-left: $toggle-switch-width;
+  transition: $transition;
+  width: $toggle-switch-width;
+  height: $toggle-box-height;
+  border-radius: $toggle-box-border-radius;
+  background-color: rgba(249, 249, 249, 0.5);
+}
+
+.answer-unselected {
+  width: 50%;
+  cursor: pointer;
+  color: $answer-unselected-color;
+  transition: $transition;
+}
+
+.answer-unselected:hover {
+  color: #efefef;
+}
+
+.answer-selected {
+  width: 50%;
+  cursor: pointer;
+  color: $answer-selected-color;
+  transition: $transition;
+}
+
+.question {
+  margin-top: 30px;
+  font-size: $font-size-large;
+  color: white;
+}
+
+.correct {
+  font-size: $font-size-large;
+  color: white;
+}
