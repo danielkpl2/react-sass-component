@@ -42,6 +42,7 @@ class Quiz extends Component {
   }
 
   handleToggle(index, answer){
+    if(this.state.correct) return;
     const answers = [...this.state.answers];
 
     if(answer === 1){
